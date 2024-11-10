@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+e:\Data\My obsidian vault\obsidian-vault\Minds\Мой wishlist 🎉.md e:\Data\My obsidian vault\obsidian-vault\Minds\Его wishlist 🎉.md# Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
