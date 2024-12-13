@@ -9,12 +9,6 @@
 - **[Клавиатура AULA F75](https://www.dns-shop.ru/product/1e616b2882faaae5/klaviatura-provodnaa--besprovodnaa-aula-f75-80003615/?utm_medium=organic&utm_source=google&utm_referrer=https%3A%2F%2Fwww.google.com%2F)**  
   _Будет в качестве переносной клавы. Цена вопроса ~ 5700Р._
 
-- **[Наушники Hyper X Cloud Stinger 2 Core](https://market.yandex.ru/product--cloud-stinger-2-core/618742968?sku=101933555483&uniqueId=889459&do-waremd5=WvuCab47QjkA6HT86c3Rvw)**  
-  _Наушники к компу в **квадратной комнате**. Цена вопроса ~ 5000Р._
-
-- **[Док-станция](https://market.yandex.ru/cc/O4AsuIJ) (либо [такая](https://market.yandex.ru/cc/aRBXp6l))**  
-  _Док-станция для подключения проводного интерента. Цена вопроса ~ 2500Р (5500Р)._
-
 
 ## 🪙 Мелочь
 - **[Кардхолдер](https://market.yandex.ru/cc/1oWfj41)**  
