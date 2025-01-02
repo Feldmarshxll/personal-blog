@@ -15,11 +15,11 @@
 - **[Canon EOS R7](https://market.yandex.ru/cc/9QbuuHl)**  
   _Ну надо же новую камеру искать. Цена вопроса ~ 100000Р._
 
-- **[JBL Wave Beam](https://market.yandex.ru/cc/U51axIB)**
+- **[JBL Wave Beam](https://market.yandex.ru/cc/U51axIB)**  
   _Замена моих старых, у которых нет баса. Цена вопроса ~ 4700Р._
 
-- **[Royal Kludge R75](https://market.yandex.ru/cc/hCeLUfo)**
-  _От от старой пальцы устают и она достаточно громкая, а это тихая. Цена вопроса ~ 6100P_
+- **[Royal Kludge R75](https://market.yandex.ru/cc/hCeLUfo)**  
+  _От старой пальцы устают и она достаточно громкая, а это тихая. Цена вопроса ~ 6100P._
 
 - **[Руль Logitech](https://market.yandex.ru/cc/Nqn2QpK)**  
   _Кататься. Цена вопроса ~ 32000Р._
