@@ -6,12 +6,6 @@
 - **[Новый ноутбук](https://market.yandex.ru/cc/RHNQwS1)**  
   _Для работы, учебы и хобби. Цена вопроса ~ 1000$._
 
-- **[Весы Xiaomi Body Composition Scale S400](https://market.yandex.ru/cc/7TEbJp)**  
-  _Цена вопроса ~ 3000Р._
-
-- **[Logitech G G305/G304](https://market.yandex.ru/cc/7TEcsj)**  
-  _Цена вопроса ~ 3000Р._
-
 ## 🪙 Мелочь
 - **[Худи Bloom Century](https://market.yandex.ru/cc/7TEUHM)**  
   _Поршик. Цена вопроса ~ 3000Р._  
