@@ -6,9 +6,16 @@
 - **[Новый ноутбук](https://market.yandex.ru/cc/RHNQwS1)**  
   _Для работы, учебы и хобби. Цена вопроса ~ 1000$._
 
-## 🪙 Мелочь
+- **[Наушники HyperX](https://market.yandex.ru/cc/8NQy9J)**  
+  _Уже 2 раза дарил такие же - супер. Цена вопроса ~ 8000Р._
+
+## 👕 Одежда
 - **[Худи Bloom Century](https://market.yandex.ru/cc/7TEUHM)**  
-  _Поршик. Цена вопроса ~ 3000Р._  
+  _Поршик. Цена вопроса ~ 3000Р._ 
+
+- **Футболки от Indiwd ([Арктика](https://indiwd.com/men/men-t-shirts/tshirtm590), [Буран](https://indiwd.com/men/men-t-shirts/tshirtm560), [Восток](https://indiwd.com/men/men-t-shirts/tshirtm509))**  
+  _Давно слежу за этим брендом, отличная одежда. Цена вопроса ~ 5000Р._ 
+
 
 
 ## 📚 Учебники
