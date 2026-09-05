@@ -146,29 +146,29 @@
     context.scale(width / SIZE, height / 1000);
     context.drawImage(scene, 0, 0);
     stars.forEach((star) => {
-      const shimmer = paused ? 1 : .8 + Math.sin(elapsed * .0004 + star.phase) * .2;
+      const shimmer = .8 + Math.sin(elapsed * .0004 + star.phase) * .2;
       context.fillStyle = `rgba(230,218,196,${star.alpha * shimmer})`;
       context.beginPath();
       context.arc(star.x, star.y, star.size, 0, Math.PI * 2);
       context.fill();
     });
-    // Small drifting bands over the disk, with no motion over the text area.
+    // Visible streams orbit the disk; the central void occludes their rear path.
     context.save();
     context.translate(620, 465);
     context.rotate(-.225);
     context.globalCompositeOperation = 'screen';
-    for (let i = 0; i < 75; i += 1) {
-      const angle = i * 2.39996 + elapsed * .000035 * (1 + (i % 4) * .15);
-      const r = 190 + (i % 23) * 7.7;
+    for (let i = 0; i < 96; i += 1) {
+      const angle = i * 2.39996 + elapsed * .00022 * (1 + (i % 4) * .1);
+      const r = 165 + (i % 29) * 8.3;
       const x = Math.cos(angle) * r;
       const y = Math.sin(angle) * r * .15;
       if (Math.abs(x) < 154) continue;
-      context.strokeStyle = `rgba(255,211,146,${.045 + (i % 5) * .012})`;
-      context.lineWidth = .65;
+      context.strokeStyle = `rgba(255,211,146,${.2 + (i % 5) * .08})`;
+      context.lineWidth = .9 + (i % 3) * .35;
       context.beginPath();
-      context.ellipse(0, 0, r, r * .15, 0, angle, angle + .08);
+      context.ellipse(0, 0, r, r * .15, 0, angle, angle + .13 + (i % 4) * .025);
       context.stroke();
-      if (y > 0) { context.fillStyle = '#ffe1aa55'; context.fillRect(x, y, 1.3, .65); }
+      if (y > 0) { context.fillStyle = '#ffe1aabf'; context.fillRect(x, y, 2.2, 1); }
     }
     context.restore();
     context.restore();
