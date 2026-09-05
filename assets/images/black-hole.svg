@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" fill="none">
+  <defs>
+    <radialGradient id="haze"><stop stop-color="#a86227" stop-opacity=".24"/><stop offset=".5" stop-color="#885020" stop-opacity=".12"/><stop offset="1" stop-color="#0b0c0e" stop-opacity="0"/></radialGradient>
+    <linearGradient id="disk" x1="-440" y1="0" x2="430" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#75421f" stop-opacity="0"/><stop offset=".25" stop-color="#bb7237" stop-opacity=".6"/><stop offset=".52" stop-color="#ffe8bd"/><stop offset=".8" stop-color="#bd7237" stop-opacity=".6"/><stop offset="1" stop-color="#593519" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ring" x1="-120" y1="-130" x2="120" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#ae6830"/><stop offset=".48" stop-color="#ffe7b8"/><stop offset="1" stop-color="#9b552b"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="19"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="grain"><feTurbulence baseFrequency=".15 .5" numOctaves="3" seed="5" type="fractalNoise"/><feColorMatrix type="saturate" values="0"/><feComposite in2="SourceGraphic" operator="in"/><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+  </defs>
+  <ellipse cx="620" cy="478" rx="505" ry="393" fill="url(#haze)"/>
+  <g fill="#ede1cd" opacity=".4"><circle cx="314" cy="232" r="1"/><circle cx="963" cy="277" r="1.2"/><circle cx="901" cy="681" r=".7"/><circle cx="370" cy="701" r=".8"/><circle cx="762" cy="161" r=".7"/><circle cx="1080" cy="547" r="1"/><circle cx="261" cy="527" r=".6"/><circle cx="519" cy="112" r=".6"/><circle cx="833" cy="747" r="1"/><circle cx="1013" cy="123" r=".6"/><circle cx="110" cy="312" r=".7"/></g>
+  <g transform="translate(620 465) rotate(-13)">
+    <ellipse rx="372" ry="63" stroke="#c78543" stroke-width="44" opacity=".17" filter="url(#blur)"/>
+    <ellipse rx="151" ry="148" stroke="#ce8847" stroke-width="25" opacity=".38" filter="url(#blur)"/>
+    <g stroke="url(#disk)" filter="url(#grain)">
+      <ellipse rx="399" ry="66" stroke-width="1"/><ellipse rx="391" ry="64" stroke-width="2"/><ellipse rx="382" ry="61"/><ellipse rx="371" ry="59" stroke-width="2"/><ellipse rx="361" ry="56" stroke-width="2"/><ellipse rx="352" ry="54"/><ellipse rx="340" ry="50" stroke-width="3"/><ellipse rx="327" ry="46" stroke-width="2"/><ellipse rx="318" ry="45"/><ellipse rx="304" ry="43" stroke-width="3"/><ellipse rx="291" ry="39" stroke-width="2"/><ellipse rx="275" ry="36" stroke-width="3"/><ellipse rx="259" ry="33"/><ellipse rx="243" ry="31" stroke-width="2"/><ellipse rx="225" ry="28" stroke-width="3"/><ellipse rx="207" ry="25" stroke-width="2"/>
+    </g>
+    <ellipse rx="146" ry="138" fill="#090909"/>
+    <ellipse rx="145" ry="137" stroke="url(#ring)" stroke-width="10" opacity=".6" filter="url(#soft)"/>
+    <path d="M-150 1C-155-184 155-184 150 1" stroke="url(#ring)" stroke-width="4"/>
+    <path d="M-155 1C-167-196 166-196 155 1" stroke="url(#ring)" stroke-width="1.7" opacity=".6"/>
+    <path d="M-161 1C-180-206 180-206 161 1" stroke="url(#ring)" opacity=".35"/>
+    <path d="M-145 6C-149 184 149 184 145 6" stroke="url(#ring)" stroke-width="2" opacity=".7"/>
+    <path d="M-151 6C-154 191 154 191 151 6" stroke="url(#ring)" opacity=".3"/>
+    <path d="M-408 9C-228-3-180 44 0 45C180 44 228-3 408 9" stroke="url(#disk)" stroke-width="17" opacity=".5" filter="url(#soft)"/>
+    <g stroke="url(#disk)"><path d="M-435 9C-228-3-180 44 0 45C180 44 228-3 435 9" stroke-width="2"/><path d="M-420 12C-229 0-182 49 0 49C182 49 229 0 420 12" stroke-width="1.5"/><path d="M-408 15C-226 4-180 53 0 54C180 53 226 4 408 15"/><path d="M-393 16C-223 7-178 57 0 58C178 57 223 7 393 16" opacity=".7"/><path d="M-383 18C-220 10-176 60 0 62C176 60 220 10 383 18" opacity=".4"/></g>
+  </g>
+</svg>
