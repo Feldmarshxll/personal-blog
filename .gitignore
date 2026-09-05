@@ -1,0 +1,28 @@
+# Local Python environment and bytecode
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Generated content, rendered site, caches and reports
+.build/
+site/
+plans/
+.cache/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Local tools and editor state
+.superpowers/
+.worktrees/
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

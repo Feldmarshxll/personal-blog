@@ -1,0 +1,7 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="page-shell prose">
+  <header class="page-intro"><p class="eyebrow">404 / За пределами карты</p><h1>Страница не найдена</h1><p>Возможно, адрес изменился или в ссылке есть опечатка.</p></header>
+  <a class="button button-primary" href="{{ (config.extra.base_path) | e }}">Вернуться на главную <span aria-hidden="true">→</span></a>
+</div>
+{% endblock %}

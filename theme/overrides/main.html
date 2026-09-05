@@ -1,0 +1,50 @@
+{% set current_page = page | default({}, true) %}
+{% set page_meta = current_page.meta | default({}, true) %}
+{% set page_url = current_page.url | default('__missing__') %}
+{% set site_data = config.extra.site | default(page_meta.site | default({}, true), true) %}
+{% set site_name = site_data.name | default(config.site_name, true) %}
+{% set site_tagline = site_data.tagline | default(config.site_description) %}
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0e">
+  <title>{% if current_page.title %}{{ (current_page.title) | e }} · {% endif %}{{ (site_name) | e }}</title>
+  <meta name="description" content="{{ (page_meta.description | default(site_tagline, true)) | e }}">
+  <link rel="icon" type="image/svg+xml" href="{{ (config.extra.base_path) | e }}assets/images/favicon.svg">
+  <link rel="stylesheet" href="{{ (config.extra.base_path) | e }}assets/styles/site.css">
+  {% block head_extra %}{% endblock %}
+</head>
+<body class="{% block body_class %}inner-page{% endblock %}">
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <a class="site-brand" href="{{ (config.extra.base_path) | e }}" aria-label="{{ (site_name) | e }} — главная">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="9" stroke="currentColor"/><ellipse cx="20" cy="20" rx="19" ry="6" transform="rotate(-28 20 20)" stroke="currentColor"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+      <span>{{ (site_name) | e }}</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden><span>Меню</span><span class="menu-lines" aria-hidden="true"></span></button>
+    <nav class="site-navigation" id="site-navigation" aria-label="Основная навигация">
+      <a href="{{ (config.extra.base_path) | e }}"{% if page_url == '' or page_url == 'index.html' %} aria-current="page"{% endif %}>Главная</a>
+      <a href="{{ (config.extra.base_path) | e }}blog/"{% if 'blog/' in page_url %} aria-current="{{ ('page' if page_url == 'blog/' else 'true') | e }}"{% endif %}>Блог и портфолио</a>
+      <a href="{{ (config.extra.base_path) | e }}personal/"{% if 'personal/' in page_url %} aria-current="{{ ('page' if page_url == 'personal/' else 'true') | e }}"{% endif %}>Личное</a>
+    </nav>
+  </header>
+  {% if 'blog/' in page_url %}
+  <nav class="section-navigation" aria-label="Блог и портфолио">
+    <a href="{{ (config.extra.base_path) | e }}blog/articles/"{% if 'blog/articles/' in page_url %} aria-current="true"{% endif %}>Статьи</a>
+    <a href="{{ (config.extra.base_path) | e }}blog/series/"{% if 'blog/series/' in page_url %} aria-current="true"{% endif %}>Серии</a>
+    <a href="{{ (config.extra.base_path) | e }}blog/projects/"{% if 'blog/projects/' in page_url %} aria-current="true"{% endif %}>Проекты</a>
+    <a href="{{ (config.extra.base_path) | e }}blog/resume/"{% if 'blog/resume/' in page_url %} aria-current="page"{% endif %}>Резюме</a>
+  </nav>
+  {% endif %}
+  <main id="main-content" tabindex="-1">{% block content %}<div class="page-shell prose">{{ current_page.content | default('') | safe }}</div>{% endblock %}</main>
+  <footer class="site-footer">
+    <a class="footer-name" href="{{ (config.extra.base_path) | e }}">{{ (site_name) | e }}</a>
+    <span class="footer-note">{{ (site_tagline) | e }}</span>
+    <a class="back-to-top" href="#">Наверх <span aria-hidden="true">↑</span></a>
+  </footer>
+  <script src="{{ (config.extra.base_path) | e }}assets/scripts/site.js" defer></script>
+  {% block scripts_extra %}{% endblock %}
+</body>
+</html>

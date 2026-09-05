@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<title>Проверка анимации Canvas</title>
+<style>
+  body { margin: 20px; color: #eee; background: #0b0c0e; font: 16px sans-serif; }
+  [data-black-hole] { width: 720px; height: 600px; position: relative; }
+  canvas { width: 100%; height: 100%; }
+  button { position: absolute; bottom: 0; left: 0; padding: 10px; }
+  pre { white-space: pre-wrap; }
+</style>
+<h1>Проверка реальных кадров Canvas</h1>
+<div data-black-hole>
+  <canvas hidden></canvas>
+  <button type="button" data-animation-toggle hidden><span data-animation-label></span></button>
+</div>
+<pre role="status" hidden></pre>
+<script src="../assets/scripts/black-hole.js"></script>
+<script>
+  // Stage this fixture at .build/site/browser-tests/animation.html after a build.
+  // It tests the actual renderer and DOM events, with no fake Canvas or clock.
+  (async () => {
+    const output = document.querySelector('[role="status"]');
+    const results = [];
+    const check = (condition, message) => results.push(`${condition ? 'PASS' : 'FAIL'}: ${message}`);
+    const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+    const canvas = document.querySelector('canvas');
+    const context = canvas.getContext('2d');
+    const button = document.querySelector('button');
+    const pixels = () => context.getImageData(0, 0, canvas.width, canvas.height).data;
+    const identical = (left, right) => left.length === right.length && left.every((v, i) => v === right[i]);
+    try {
+      if (button.getAttribute('aria-pressed') === 'true') button.click();
+      await wait(1200);
+      check(!document.hidden, 'Вкладка активна во время проверки');
+      const moving = pixels();
+      button.click();
+      const paused = pixels();
+      check(button.getAttribute('aria-pressed') === 'true', 'Кнопка переводит анимацию на паузу');
+      check(identical(moving, paused), 'Пауза сохраняет текущий кадр без скачка яркости');
+      await wait(400);
+      check(identical(paused, pixels()), 'На паузе изображение не меняется');
+      button.click();
+      check(identical(paused, pixels()), 'Возобновление начинается с сохранённого кадра');
+      await wait(1200);
+      const resumed = pixels();
+      let perceptible = 0;
+      const background = [11, 12, 14];
+      for (let i = 0; i < resumed.length; i += 4) {
+        // Compare the visible result on the site's background, including alpha.
+        const contrast = Math.max(...background.map((base, channel) => {
+          const before = (paused[i + channel] - base) * paused[i + 3] / 255;
+          const after = (resumed[i + channel] - base) * resumed[i + 3] / 255;
+          return Math.abs(after - before);
+        }));
+        if (contrast >= 12) perceptible += 1;
+      }
+      const share = perceptible / (canvas.width * canvas.height);
+      check(share >= .002, `Движение заметно за 1,2 с: ${(share * 100).toFixed(3)}% пикселей меняются с контрастом ≥12/255 (минимум 0,2%)`);
+      button.click();
+    } catch (error) {
+      results.push(`FAIL: ${error.message}`);
+    }
+    output.textContent = results.join('\n');
+    output.hidden = false;
+  })();
+</script>
+</html>

@@ -1,0 +1,39 @@
+[project]
+site_name = "Feldmarshxll & SuperciliosMe"
+site_url = "https://feldmarshxll.github.io/personal-blog/"
+site_description = "Записки, проекты и немного личного"
+docs_dir = ".build/docs"
+site_dir = ".build/site"
+use_directory_urls = true
+nav = [
+  { "Главная" = "index.md" },
+  { "Блог и портфолио" = [
+    { "Обзор" = "blog/index.md" },
+    { "Статьи" = "blog/articles/index.md" },
+    { "Серии" = "blog/series/index.md" },
+    { "Проекты" = "blog/projects/index.md" },
+    { "Резюме" = "blog/resume.md" },
+  ] },
+  { "Личное" = [
+    { "Обзор" = "personal/index.md" },
+    { "Мой wishlist" = "personal/wishlists/mine.md" },
+    { "Его wishlist" = "personal/wishlists/his.md" },
+  ] },
+]
+
+[project.theme]
+language = "ru"
+custom_dir = "theme/overrides"
+font = false
+
+[project.extra]
+base_path = "/personal-blog/"
+
+[project.markdown_extensions]
+attr_list = {}
+md_in_html = {}
+tables = {}
+admonition = {}
+toc = { permalink = true }
+"pymdownx.highlight" = { anchor_linenums = true }
+"pymdownx.superfences" = {}

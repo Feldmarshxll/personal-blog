@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+<article class="article-shell">
+  <header class="article-header">
+    <a class="text-link article-back" href="{{ (config.extra.base_path) | e }}blog/articles/"><span aria-hidden="true">←</span> Все статьи</a>
+    <div class="article-meta"><span>{{ (page.meta.article.date_label) | e }}</span>{% if page.meta.article.category %}<a href="{{ (page.meta.article.category.url) | e }}">{{ (page.meta.article.category.title) | e }}</a>{% endif %}</div>
+    <h1>{{ (page.title) | e }}</h1>
+    {% if page.meta.description %}<p class="article-description">{{ (page.meta.description) | e }}</p>{% endif %}
+    {% if page.meta.article.authors %}<p class="article-authors">{{ (page.meta.article.authors | join(' · ')) | e }}</p>{% endif %}
+    {% if page.meta.article.tags %}<div class="article-tags" aria-label="Теги">{% for tag in page.meta.article.tags %}<a class="tag" href="{{ (tag.url) | e }}">{{ (tag.title) | e }}</a>{% endfor %}</div>{% endif %}
+  </header>
+  {% if page.meta.article.series %}<aside class="series-banner">Часть серии <a href="{{ (page.meta.article.series.url) | e }}">{{ (page.meta.article.series.title) | e }}</a></aside>{% endif %}
+  {% if page.toc %}<details class="article-toc"><summary>В этой статье</summary><nav aria-label="Оглавление статьи"><ul>{% for item in page.toc %}<li><a href="{{ (item.url) | e }}">{{ (item.title) | e }}</a>{% if item.children %}<ul>{% for child in item.children %}<li><a href="{{ (child.url) | e }}">{{ (child.title) | e }}</a></li>{% endfor %}</ul>{% endif %}</li>{% endfor %}</ul></nav></details>{% endif %}
+  <div class="article-body prose">{{ page.content | safe }}</div>
+  {% if page.meta.article.series %}<nav class="series-pagination" aria-label="Части серии">{% if page.meta.article.series.previous %}<a href="{{ (page.meta.article.series.previous.url) | e }}"><span>← Предыдущая часть</span>{{ (page.meta.article.series.previous.title) | e }}</a>{% endif %}{% if page.meta.article.series.next %}<a href="{{ (page.meta.article.series.next.url) | e }}"><span>Следующая часть →</span>{{ (page.meta.article.series.next.title) | e }}</a>{% endif %}</nav>{% endif %}
+</article>
+{% endblock %}
