@@ -1,0 +1,154 @@
+id: mine
+title: Мой wishlist
+description: Добро пожаловать в мой wishlist! Здесь я собрал вещи и цели, которые хочу достичь или приобрести.
+legacy_path: "Мой wishlist 🎉"
+categories:
+  - id: tech
+    title: Техника
+  - id: clothing
+    title: Одежда
+  - id: textbooks
+    title: Учебники
+  - id: goals
+    title: Цели
+items:
+  - id: new-laptop
+    title: Новый ноутбук
+    description: Для работы, учебы и хобби.
+    category: tech
+    kind: product
+    links:
+      - label: Новый ноутбук
+        url: https://market.yandex.ru/cc/RHNQwS1
+    price: 1000
+    currency: USD
+    status: wanted
+  - id: hyperx-headphones
+    title: Наушники HyperX
+    description: Уже 2 раза дарил такие же - супер.
+    category: tech
+    kind: product
+    links:
+      - label: Наушники HyperX
+        url: https://market.yandex.ru/cc/8NQy9J
+    price: 8000
+    currency: RUB
+    status: wanted
+  - id: bloom-century-hoodie
+    title: Худи Bloom Century
+    description: Поршик.
+    category: clothing
+    kind: product
+    links:
+      - label: Худи Bloom Century
+        url: https://market.yandex.ru/cc/7TEUHM
+    price: 3000
+    currency: RUB
+    status: wanted
+  - id: indiwd-t-shirts
+    title: Футболки от Indiwd
+    description: Давно слежу за этим брендом, отличная одежда.
+    category: clothing
+    kind: product
+    links:
+      - label: Арктика
+        url: https://indiwd.com/men/men-t-shirts/tshirtm590
+      - label: Буран
+        url: https://indiwd.com/men/men-t-shirts/tshirtm560
+      - label: Восток
+        url: https://indiwd.com/men/men-t-shirts/tshirtm509
+    price: 5000
+    currency: RUB
+    status: wanted
+  - id: competitive-data-science
+    title: Соревновательный Data Science
+    description: Давно уже мечтаю попробовать себя в соревновательном Data Science.
+    category: textbooks
+    kind: product
+    links:
+      - label: Соревновательный Data Science
+        url: https://stepik.org/course/108888/promo
+    price: 8500
+    currency: RUB
+    status: wanted
+  - id: art-of-computer-programming-volume-3
+    title: "Искусство программирования: 3 том"
+    description: Библия программирования, основа CS, и тд.
+    category: textbooks
+    kind: product
+    links:
+      - label: авито
+        url: https://www.avito.ru/moskva/knigi_i_zhurnaly/knut._iskusstvo_programmirovaniya._toma_1_2_3_4a_3603448616?slocation=653240
+      - label: озон
+        url: https://ozon.ru/t/kojrZ4D
+    price: 3000
+    currency: RUB
+    status: wanted
+  - id: art-of-computer-programming-volume-4a
+    title: "Искусство программирования: 4А том"
+    description: Библия программирования, основа CS, и тд.
+    category: textbooks
+    kind: product
+    links:
+      - label: авито
+        url: https://www.avito.ru/moskva/knigi_i_zhurnaly/knut._iskusstvo_programmirovaniya._toma_1_2_3_4a_3603448616?slocation=653240
+      - label: озон
+        url: https://ozon.ru/t/kojrZ4D
+    price: 3000
+    currency: RUB
+    status: wanted
+  - id: grokking-algorithms-second-edition
+    title: Грокаем алгоритмы 2-е изд.
+    description: По сути, я эту книгу уже знаю, но в коллекцию пойдет.
+    category: textbooks
+    kind: product
+    links:
+      - label: Грокаем алгоритмы 2-е изд.
+        url: https://ozon.ru/t/RpPm1D0
+    price: 1000
+    currency: RUB
+    status: wanted
+  - id: thinking-fast-and-slow
+    title: Думай медленно... решай быстро
+    description: Интересная книга про психологию от известного психолога.
+    category: textbooks
+    kind: product
+    links:
+      - label: Печатная версия
+        url: https://ozon.ru/t/Zx538ME
+      - label: pdf-ка
+        url: https://www.litres.ru/book/daniel-kaneman/dumay-medlenno-reshay-bystro-6444517/
+    price: 1000
+    currency: RUB
+    status: wanted
+  - id: neural-network-work
+    title: Работа с нейронками
+    description: Дообучить (RAG) нейронку на постах Медведева.
+    category: goals
+    kind: goal
+    links: []
+    status: wanted
+  - id: dissertation
+    title: Диссертация
+    description: Создать первый рабочий прототип и поставить его на обучение.
+    category: goals
+    kind: goal
+    links: []
+    status: wanted
+  - id: apartment
+    title: Квартира
+    description: Ну тут я думаю все очевидно.
+    category: goals
+    kind: goal
+    links: []
+    status: wanted
+  - id: driving
+    title: Вождение
+    description: Получить наконец-таки права.
+    category: goals
+    kind: goal
+    links: []
+    status: wanted
+footer_links:
+  - label: Лучший сайт с подарками - Вот он
+    url: https://shop.pygen.ru/

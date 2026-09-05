@@ -1,0 +1,10 @@
+name: Feldmarshxll & SuperciliosMe
+tagline: Записки, проекты и немного личного
+intro: Личный сайт с заметками, проектами и материалами авторов.
+categories:
+  - id: development
+    title: Разработка
+  - id: data-science
+    title: Data Science
+  - id: research
+    title: Исследования

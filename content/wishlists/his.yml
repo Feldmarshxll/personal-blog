@@ -1,0 +1,191 @@
+id: his
+title: Его wishlist
+description: Добро пожаловать в мой wishlist! Здесь я собрал вещи и цели, которые хочу достичь или приобрести.
+legacy_path: "Его wishlist 🎉"
+categories:
+  - id: tech
+    title: Техника
+  - id: small-things
+    title: Мелочь
+  - id: humor
+    title: Юмор
+items:
+  - id: portable-game-console
+    title: Портативная игровая консоль
+    description: Для учебы.
+    category: tech
+    kind: product
+    links:
+      - label: Портативная игровая консоль
+        url: https://market.yandex.ru/cc/TNCAC8j
+    price: 65000
+    currency: RUB
+    status: wanted
+  - id: action-camera
+    title: Экшн-камера
+    description: Лапсики записывать.
+    category: tech
+    kind: product
+    links:
+      - label: Экшн-камера
+        url: https://market.yandex.ru/cc/FDt1fdT
+    price: 30000
+    currency: RUB
+    status: wanted
+  - id: canon-eos-r7
+    title: Canon EOS R7
+    description: Ну надо же новую камеру искать.
+    category: tech
+    kind: product
+    links:
+      - label: Canon EOS R7
+        url: https://market.yandex.ru/cc/9QbuuHl
+    price: 100000
+    currency: RUB
+    status: wanted
+  - id: logitech-steering-wheel
+    title: Руль Logitech
+    description: Кататься.
+    category: tech
+    kind: product
+    links:
+      - label: Руль Logitech
+        url: https://market.yandex.ru/cc/Nqn2QpK
+    price: 32000
+    currency: RUB
+    status: wanted
+  - id: toy-car
+    title: Машинка
+    description: Помнить легенду
+    category: small-things
+    kind: product
+    links:
+      - label: Машинка
+        url: https://market.yandex.ru/cc/8NQkja
+    price: 2800
+    currency: RUB
+    status: wanted
+  - id: night-light
+    title: Ночник
+    description: Планы записывать.
+    category: small-things
+    kind: product
+    links:
+      - label: Ночник
+        url: https://market.yandex.ru/cc/IYr1v4j
+    price: 400
+    currency: RUB
+    status: wanted
+  - id: sigma-105-f1-4-lens
+    title: Объектив Sigma 105 f/1.4
+    description: Надо-надо.
+    category: small-things
+    kind: product
+    links:
+      - label: Объектив Sigma 105 f/1.4
+        url: https://market.yandex.ru/cc/ITxuA3j
+    price: 120000
+    currency: RUB
+    status: wanted
+  - id: button-fidget-cube
+    title: Кубик антистресс с кнопками
+    description: НУ, Я, ПРОСТО, МНОГО, ОРУ.
+    category: small-things
+    kind: product
+    links:
+      - label: Кубик антистресс с кнопками
+        url: https://market.yandex.ru/cc/7TEKpU
+    price: 300
+    currency: RUB
+    status: wanted
+  - id: infinity-cube
+    title: Бесконечный куб
+    description: Что такое рекурсия?
+    category: small-things
+    kind: product
+    links:
+      - label: Бесконечный куб
+        url: https://market.yandex.ru/cc/7TEMnW
+    price: 900
+    currency: RUB
+    status: wanted
+  - id: lego-technic-42096-porsche-911-rsr
+    title: Конструктор LEGO Technic 42096 Porsche 911 RSR
+    description: Что такое рекурсия?
+    category: small-things
+    kind: product
+    links:
+      - label: Конструктор LEGO Technic 42096 Porsche 911 RSR
+        url: https://market.yandex.ru/cc/7TEQNF
+    price: 23000
+    currency: RUB
+    status: wanted
+  - id: glacial-drinking-water-19l
+    title: Вода питьевая Ледниковая 19л
+    description: На попить.
+    category: small-things
+    kind: product
+    links:
+      - label: Вода питьевая Ледниковая 19л
+        url: https://market.yandex.ru/cc/7TEUih
+    price: 100000
+    currency: RUB
+    status: wanted
+  - id: minecraft-furnace
+    title: Печь из Майнкрафт
+    description: Согреться.
+    category: humor
+    kind: product
+    links:
+      - label: Печь из Майнкрафт
+        url: https://market.yandex.ru/cc/Onv7C22
+    price: 1500
+    currency: RUB
+    status: wanted
+  - id: ussr-countryball
+    title: Кантриболл СССР
+    description: Вставай, страна огромная.
+    category: humor
+    kind: product
+    links:
+      - label: Кантриболл СССР
+        url: https://market.yandex.ru/cc/QJg2531
+    price: 2000
+    currency: RUB
+    status: wanted
+  - id: khrushchyovka-lamp
+    title: Светильник-хрущевка
+    description: Страшно одному спать.
+    category: humor
+    kind: product
+    links:
+      - label: Светильник-хрущевка
+        url: https://market.yandex.ru/cc/9U74Omw
+    price: 2800
+    currency: RUB
+    status: wanted
+  - id: doormat
+    title: Придверный коврик
+    description: Ну правильно, неча тут.
+    category: humor
+    kind: product
+    links:
+      - label: Придверный коврик
+        url: https://market.yandex.ru/cc/8k96Tiv
+    price: 600
+    currency: RUB
+    status: wanted
+  - id: radioactive-warning-sticker
+    title: Наклейка Опасно Радиоактивные вещества или излучение
+    description: На туалет повесить.
+    category: humor
+    kind: product
+    links:
+      - label: Наклейка Опасно Радиоактивные вещества или излучение
+        url: https://market.yandex.ru/cc/7TEKpU
+    price: 200
+    currency: RUB
+    status: wanted
+footer_links:
+  - label: Лучший сайт с подарками - Вот он
+    url: https://shop.pygen.ru/
