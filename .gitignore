@@ -7,6 +7,7 @@ __pycache__/
 # Generated content, rendered site, caches and reports
 .build/
 site/
+plans/
 .cache/
 .pytest_cache/
 .ruff_cache/
